@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Natálie Bergmann — Psychologické poradenství pro rodiče, děti a rodiny</title>
+  <meta name="description" content="Krátkodobé psychologické poradenství pro rodiče, děti a rodiny. Rodičovské strategie, neurovývojové obtíže, ADHD, významné životní změny." />
+  <meta name="author" content="Natálie Bergmann" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#1F3A3D" />
+  <link rel="canonical" href="https://www.nataliebergmann.cz/" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="photo.jpg" />
+
+  <!-- Social sharing preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="cs_CZ" />
+  <meta property="og:locale:alternate" content="en_GB" />
+  <meta property="og:site_name" content="Natálie Bergmann" />
+  <meta property="og:title" content="Natálie Bergmann — Psychologické poradenství pro rodiče, děti a rodiny" />
+  <meta property="og:description" content="Pomáhám rodičům přeložit odborná doporučení do konkrétních kroků, které fungují v každodenním životě." />
+  <meta property="og:url" content="https://www.nataliebergmann.cz/" />
+  <meta property="og:image" content="https://www.nataliebergmann.cz/photo.jpg" />
+  <meta property="og:image:width" content="1024" />
+  <meta property="og:image:height" content="1280" />
+  <meta property="og:image:alt" content="Natálie Bergmann" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Structured data for search engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Natálie Bergmann — Psychologické poradenství",
+    "description": "Krátkodobé psychologické poradenství pro rodiče, děti a rodiny: rodičovské strategie, ADHD a neurovývojové obtíže, podpora rodin v období změn.",
+    "url": "https://www.nataliebergmann.cz/",
+    "image": "https://www.nataliebergmann.cz/photo.jpg",
+    "email": "mailto:natalie.bergmann.sci@gmail.com",
+    "areaServed": "CZ",
+    "availableLanguage": ["cs", "en"],
+    "founder": {
+      "@type": "Person",
+      "name": "Natálie Bergmann",
+      "jobTitle": "Psycholožka",
+      "image": "https://www.nataliebergmann.cz/photo.jpg",
+      "email": "mailto:natalie.bergmann.sci@gmail.com",
+      "knowsLanguage": ["cs", "en"]
+    }
+  }
+  </script>
+
+  <link rel="preload" as="image" href="photo.jpg" fetchpriority="high" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#domu" class="nav-logo">Natálie Bergmann</a>
+
+    <!-- Desktop nav -->
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="#sluzby"      data-i18n="nav.services">Služby</a></li>
+        <li><a href="#jak-pracuji" data-i18n="nav.approach">Jak pracuji</a></li>
+        <li><a href="#zazemi"      data-i18n="nav.background">Odborné zázemí</a></li>
+        <li><a href="#cenik"       data-i18n="nav.pricing">Ceník</a></li>
+        <li><a href="#faq"         data-i18n="nav.faq">Časté otázky</a></li>
+        <li><a href="#kontakt"     data-i18n="nav.contact">Kontakt</a></li>
+      </ul>
+      <div class="lang-switcher">
+        <button type="button" id="btn-cs" class="lang-active" onclick="setLang('cs')" aria-label="Čeština" lang="cs">CS</button>
+        <span class="lang-sep" aria-hidden="true">/</span>
+        <button type="button" id="btn-en" onclick="setLang('en')" aria-label="English" lang="en">EN</button>
+      </div>
+    </div>
+
+    <!-- Hamburger (mobile only) -->
+    <button type="button" class="nav-hamburger" id="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="nav-drawer">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile drawer -->
+  <div class="nav-drawer" id="nav-drawer" aria-hidden="true" inert>
+    <a href="#domu"        data-i18n="nav.home"       class="drawer-link">Domů</a>
+    <a href="#sluzby"      data-i18n="nav.services"   class="drawer-link">Služby</a>
+    <a href="#jak-pracuji" data-i18n="nav.approach"   class="drawer-link">Jak pracuji</a>
+    <a href="#zazemi"      data-i18n="nav.background" class="drawer-link">Odborné zázemí</a>
+    <a href="#cenik"       data-i18n="nav.pricing"    class="drawer-link">Ceník</a>
+    <a href="#faq"         data-i18n="nav.faq"        class="drawer-link">Časté otázky</a>
+    <a href="#kontakt"     data-i18n="nav.contact"    class="drawer-link">Kontakt</a>
+    <div class="drawer-lang">
+      <button type="button" id="drawer-btn-cs" class="lang-active" onclick="setLang('cs')" aria-label="Čeština" lang="cs">CS</button>
+      <button type="button" id="drawer-btn-en" onclick="setLang('en')" aria-label="English" lang="en">EN</button>
+    </div>
+  </div>
+
+  <main>
+
+  <!-- ============ DOMŮ / HERO ============ -->
+  <section id="domu">
+    <div class="hero-text">
+      <h1 data-i18n="hero.title">Jasnější cesta k porozumění vašemu dítěti</h1>
+      <p data-i18n="hero.body">Pomáhám rodičům přeložit odborná doporučení do konkrétních kroků, které fungují v každodenním životě.</p>
+      <p data-i18n="hero.body2">Krátkodobé poradenství zaměřené na rodičovské strategie, neurovývojové obtíže a podporu rodin v období velkých změn.</p>
+      <div class="hero-buttons">
+        <a href="#kontakt" class="btn btn-primary"  data-i18n="hero.cta1">Objednat konzultaci</a>
+        <a href="#sluzby"  class="btn btn-secondary" data-i18n="hero.cta2">Zobrazit služby</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <div class="photo-blob" aria-hidden="true"></div>
+      <img src="photo.jpg" alt="Natálie Bergmann, psycholožka" width="1024" height="1280" fetchpriority="high" decoding="async" />
+    </div>
+  </section>
+
+  <!-- ============ S ČÍM SE NA MĚ MŮŽETE OBRÁTIT ============ -->
+  <section id="obratit">
+    <h2 data-i18n="topics.title">S čím se na mě můžete obrátit</h2>
+    <div class="topics-grid">
+      <div class="topic-card">
+        <h3 data-i18n="topics.t1.title">Rodičovské otázky a náročné chování</h3>
+        <p data-i18n="topics.t1.body">Konzultace mohou být zaměřené například na nastavování hranic, komunikaci s dítětem, silné emoce, záchvaty vzteku, sourozenecké konflikty, denní režim, motivaci, spolupráci nebo nejistotu v rodičovských postupech.</p>
+      </div>
+      <div class="topic-card">
+        <h3 data-i18n="topics.t2.title">ADHD, autismus a další neurovývojové obtíže</h3>
+        <p data-i18n="topics.t2.body">Pokud už dítě diagnózu má, ale není vám jasné, jak s ní pracovat v běžném životě, můžeme se zaměřit na praktické strategie pro domácí prostředí, školu, organizaci, pozornost, exekutivní funkce a regulaci emocí.</p>
+        <p class="topic-note" data-i18n="topics.t2.note">Neprovádím v rámci této služby novou diagnostiku. Pomáhám rodičům porozumět tomu, co stávající závěry znamenají v každodenním fungování dítěte.</p>
+      </div>
+      <div class="topic-card">
+        <h3 data-i18n="topics.t3.title">Rozvod, ztráta a významné životní změny</h3>
+        <p data-i18n="topics.t3.body">Nabízím krátkodobou podporu rodinám, které procházejí rozchodem nebo rozvodem rodičů, úmrtím v rodině, stěhováním, změnou školy, příchodem nového partnera nebo jinou významnou změnou.</p>
+      </div>
+      <div class="topic-card">
+        <h3 data-i18n="topics.t4.title">Psychologické a školní zprávy</h3>
+        <p data-i18n="topics.t4.body">Pomohu vám porozumět závěrům a doporučením z psychologického vyšetření, pedagogicko-psychologické poradny, speciálně pedagogického centra nebo dalšího odborného pracoviště a převést je do konkrétního postupu.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ JAK MŮŽE SPOLUPRÁCE VYPADAT / CO OČEKÁVAT ============ -->
+  <section id="spoluprace">
+    <div class="split-col">
+      <h2 data-i18n="collab.title">Jak může spolupráce vypadat</h2>
+      <p data-i18n="collab.intro">Podle povahy situace může spolupráce zahrnovat:</p>
+      <ul class="check-list" data-i18n-list="collab.items">
+        <li>jednorázovou konzultaci s rodičem nebo rodiči,</li>
+        <li>několik krátkodobých rodičovských konzultací,</li>
+        <li>společné setkání rodiče a dítěte,</li>
+        <li>krátkodobou individuální práci s dítětem,</li>
+        <li>rodinnou konzultaci,</li>
+        <li>vysvětlení odborné zprávy,</li>
+        <li>vytvoření individuálního plánu pro domácí prostředí.</li>
+      </ul>
+      <p data-i18n="collab.outro">Rozsah spolupráce vždy vychází z potřeb rodiny. Ne každá situace vyžaduje dlouhodobou psychoterapii. Někdy rodiče potřebují především přesněji pochopit problém, určit dosažitelný cíl a získat konkrétní strategie.</p>
+    </div>
+    <div class="split-col">
+      <h2 data-i18n="expect.title">Co můžete očekávat</h2>
+      <p data-i18n="expect.intro">Moje práce vychází z vývojové a kognitivní psychologie a z přístupu zaměřeného na řešení. Nesoustředíme se společně pouze na to, co nefunguje. Zajímá nás také:</p>
+      <ul class="check-list" data-i18n-list="expect.items">
+        <li>co už rodina zvládá,</li>
+        <li>kdy se problém objevuje méně,</li>
+        <li>co dítěti pomáhá,</li>
+        <li>jaký konkrétní cíl je realistický,</li>
+        <li>jaké změny lze vyzkoušet doma,</li>
+        <li>podle čeho poznáme pokrok.</li>
+      </ul>
+      <p data-i18n="expect.outro">Cílem spolupráce je, aby rodiče lépe rozuměli potřebám svého dítěte a měli jasnější představu o tom, co mohou prakticky dělat.</p>
+    </div>
+  </section>
+
+  <!-- ============ KDO JSEM ============ -->
+  <section id="kdo-jsem">
+    <div class="kdo-jsem-inner">
+      <h2 data-i18n="who.title">Kdo jsem</h2>
+      <p data-i18n="who.body">Jsem vývojová a kognitivní psycholožka, psycholožka ve zdravotnictví, vědkyně a vysokoškolská pedagožka. Ve své práci propojuji poznatky současné psychologie a výzkumu s praktickými doporučeními pro děti, rodiče a rodiny.</p>
+      <a href="#zazemi" class="btn btn-secondary" data-i18n="who.cta">Více o mém odborném zázemí</a>
+    </div>
+  </section>
+
+  <!-- ============ CTA BAND ============ -->
+  <section id="cta-band">
+    <h2 data-i18n="cta.title">Potřebujete si ujasnit, jak dítě podpořit?</h2>
+    <p data-i18n="cta.body">Prvním krokem může být jednorázová rodičovská konzultace. Společně zmapujeme situaci, stanovíme hlavní cíl a domluvíme se, zda bude stačit jedno setkání, nebo je vhodná krátkodobá spolupráce.</p>
+    <a href="#kontakt" class="btn btn-light" data-i18n="cta.button">Objednat konzultaci</a>
+  </section>
+
+  <!-- ============ SLUŽBY ============ -->
+  <section id="sluzby">
+    <h2 data-i18n="services.title">Psychologické služby</h2>
+    <p class="section-intro" data-i18n="services.intro">Nabízím krátkodobé psychologické poradenství pro rodiče, děti a rodiny. Konkrétní podoba spolupráce se odvíjí od povahy problému, věku dítěte a cíle, kterého chce rodina dosáhnout.</p>
+
+    <div class="accordion-group">
+
+      <details class="service-acc">
+        <summary data-i18n="services.s1.title">Rodičovská konzultace</summary>
+        <div class="acc-body">
+          <p data-i18n="services.s1.p1">Rodičovská konzultace je určena rodičům, kteří chtějí probrat konkrétní situaci, chování dítěte nebo vlastní rodičovský postup. Může se týkat například:</p>
+          <ul data-i18n-list="services.s1.items">
+            <li>nastavování hranic,</li>
+            <li>komunikace a spolupráce,</li>
+            <li>silných emocí a záchvatů vzteku,</li>
+            <li>sourozeneckých konfliktů,</li>
+            <li>motivace a odměn,</li>
+            <li>domácího režimu,</li>
+            <li>používání digitálních technologií,</li>
+            <li>nástupu do školky nebo školy,</li>
+            <li>adaptace na změnu,</li>
+            <li>nejistoty, zda rodič reaguje vhodně.</li>
+          </ul>
+          <p data-i18n="services.s1.p2">Konzultace je praktická a edukačně zaměřená. Nejedná se o psychoterapii rodiče. Podle potřeby může jít o jednorázové setkání nebo několik navazujících konzultací.</p>
+        </div>
+      </details>
+
+      <details class="service-acc">
+        <summary data-i18n="services.s2.title">Podpora při ADHD a dalších neurovývojových obtížích</summary>
+        <div class="acc-body">
+          <p data-i18n="services.s2.p1">Tato služba je určena rodičům dětí, které již mají stanovenou diagnózu nebo odborné závěry, ale rodina potřebuje lépe pochopit jejich praktický význam. Můžeme se zaměřit například na:</p>
+          <ul data-i18n-list="services.s2.items">
+            <li>fungování pozornosti,</li>
+            <li>impulzivitu,</li>
+            <li>plánování a organizaci,</li>
+            <li>zahajování a dokončování úkolů,</li>
+            <li>pracovní paměť,</li>
+            <li>emoční regulaci,</li>
+            <li>přechody mezi aktivitami,</li>
+            <li>školní přípravu,</li>
+            <li>nastavování přiměřených očekávání,</li>
+            <li>úpravu domácího prostředí a režimu,</li>
+            <li>komunikaci se školou.</li>
+          </ul>
+          <p data-i18n="services.s2.p2">Cílem není diagnózu pouze popsat, ale převést ji do konkrétních postupů, které jsou použitelné v běžném životě rodiny. V rámci této služby neprovádím nové diagnostické vyšetření ani nepřezkoumávám správnost již stanovené diagnózy.</p>
+        </div>
+      </details>
+
+      <details class="service-acc">
+        <summary data-i18n="services.s3.title">Konzultace odborné zprávy</summary>
+        <div class="acc-body">
+          <p data-i18n="services.s3.p1">Rodiče mohou přinést nebo předem zaslat zprávu z psychologického, neuropsychologického, psychiatrického, školského nebo speciálněpedagogického vyšetření. Během konzultace můžeme společně projít:</p>
+          <ul data-i18n-list="services.s3.items">
+            <li>co jednotlivé závěry znamenají,</li>
+            <li>jak se mohou projevovat doma a ve škole,</li>
+            <li>která doporučení jsou nejdůležitější,</li>
+            <li>co lze zavést okamžitě,</li>
+            <li>jak doporučení přizpůsobit konkrétnímu dítěti,</li>
+            <li>které otázky je vhodné položit škole nebo dalším odborníkům.</li>
+          </ul>
+          <p data-i18n="services.s3.p2">Nejde o vypracování druhého diagnostického posudku. Služba je zaměřená na vysvětlení a praktické využití dostupných závěrů v každodenním životě.</p>
+        </div>
+      </details>
+
+      <details class="service-acc">
+        <summary data-i18n="services.s4.title">Podpora rodiny v období změny</summary>
+        <div class="acc-body">
+          <p data-i18n="services.s4.p1">Krátkodobé poradenství může pomoci rodinám, které procházejí například:</p>
+          <ul data-i18n-list="services.s4.items">
+            <li>rozchodem nebo rozvodem rodičů,</li>
+            <li>změnou péče a přecházením mezi domácnostmi,</li>
+            <li>úmrtím nebo jinou významnou ztrátou,</li>
+            <li>stěhováním,</li>
+            <li>změnou školy,</li>
+            <li>příchodem nového partnera rodiče,</li>
+            <li>narozením sourozence,</li>
+            <li>dlouhodobou nemocí člena rodiny,</li>
+            <li>jinou významnou změnou rodinného fungování.</li>
+          </ul>
+          <p data-i18n="services.s4.p2">Cílem není odstranit přirozené emoce dítěte. Zaměřujeme se na to, jak mu pomoci situaci porozumět, zvýšit jeho pocit bezpečí a nastavit způsob komunikace a podpory, který bude dlouhodobě zvládnutelný.</p>
+        </div>
+      </details>
+
+      <details class="service-acc">
+        <summary data-i18n="services.s5.title">Individuální setkání s dítětem</summary>
+        <div class="acc-body">
+          <p data-i18n="services.s5.p1">U některých případů může být součástí spolupráce také krátkodobá individuální práce s dítětem. Setkání může být zaměřené na:</p>
+          <ul data-i18n-list="services.s5.items">
+            <li>porozumění emocím,</li>
+            <li>zvládání změny,</li>
+            <li>hledání strategií pro náročné situace,</li>
+            <li>posílení schopnosti vyjádřit své potřeby,</li>
+            <li>práci s pozorností, plánováním nebo sebeřízením,</li>
+            <li>nácvik konkrétních dovedností.</li>
+          </ul>
+          <p data-i18n="services.s5.p2">Individuální setkání s dítětem nabízím zpravidla až po úvodní konzultaci s rodičem. Práce s dítětem není oddělená od rodinného kontextu a rodiče zůstávají důležitou součástí spolupráce.</p>
+        </div>
+      </details>
+
+      <details class="service-acc">
+        <summary data-i18n="services.s6.title">Společné setkání rodiče a dítěte</summary>
+        <div class="acc-body">
+          <p data-i18n="services.s6.p1">Společné setkání může být vhodné, když je užitečné:</p>
+          <ul data-i18n-list="services.s6.items">
+            <li>sledovat vzájemnou komunikaci,</li>
+            <li>nacvičit konkrétní situaci,</li>
+            <li>podpořit dítě ve sdělení jeho potřeb,</li>
+            <li>nastavit společná pravidla,</li>
+            <li>vyzkoušet nové rodičovské reakce,</li>
+            <li>vytvořit dohodu nebo společný plán.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="service-acc">
+        <summary data-i18n="services.s7.title">Rodinná konzultace</summary>
+        <div class="acc-body">
+          <p data-i18n="services.s7.p1">Rodinná konzultace je určena pro situace, kdy je vhodné zapojit více členů rodiny. Nejedná se o dlouhodobou rodinnou psychoterapii. Konzultace má jasně stanovené téma a praktický cíl.</p>
+        </div>
+      </details>
+
+      <details class="service-acc">
+        <summary data-i18n="services.s8.title">Individuální plán podpory</summary>
+        <div class="acc-body">
+          <p data-i18n="services.s8.p1">U komplexnějších situací může být výsledkem spolupráce písemný plán pro rodinu. Plán může obsahovat:</p>
+          <ul data-i18n-list="services.s8.items">
+            <li>hlavní cíl spolupráce,</li>
+            <li>vysvětlení potřeb dítěte,</li>
+            <li>konkrétní doporučení pro rodiče,</li>
+            <li>vhodné formulace a způsoby komunikace,</li>
+            <li>úpravu domácích rutin,</li>
+            <li>strategie pro náročné situace,</li>
+            <li>doporučení pro podporu ve škole,</li>
+            <li>způsob sledování pokroku,</li>
+            <li>situace, ve kterých je vhodné vyhledat další odbornou péči.</li>
+          </ul>
+          <p data-i18n="services.s8.p2">Nejedná se o diagnostický nález ani znalecký posudek. Plán je praktickým pracovním dokumentem pro rodinu.</p>
+        </div>
+      </details>
+
+    </div>
+  </section>
+
+  <!-- ============ JAK PRACUJI ============ -->
+  <section id="jak-pracuji">
+    <h2 data-i18n="approach.title">Jak pracuji</h2>
+    <div class="approach-grid">
+      <div class="approach-item">
+        <h3 data-i18n="approach.a1.title">Přístup zaměřený na řešení</h3>
+        <p data-i18n="approach.a1.p1">Ve své práci využívám principy přístupu zaměřeného na řešení. To znamená, že vedle podrobného porozumění problému věnujeme pozornost také tomu:</p>
+        <ul data-i18n-list="approach.a1.items">
+          <li>čeho chce rodina dosáhnout,</li>
+          <li>co už alespoň částečně funguje,</li>
+          <li>kdy se problém objevuje méně,</li>
+          <li>jaké silné stránky má dítě a jeho rodina,</li>
+          <li>jaký nejmenší užitečný krok lze udělat nyní.</li>
+        </ul>
+        <p data-i18n="approach.a1.p2">Zaměření na řešení neznamená přehlížení náročných emocí, traumatu nebo ztráty. Znamená to, že porozumění problému propojujeme s hledáním konkrétních možností dalšího postupu.</p>
+      </div>
+      <div class="approach-item">
+        <h3 data-i18n="approach.a2.title">Vývojová perspektiva</h3>
+        <p data-i18n="approach.a2.p1">Chování dítěte posuzuji v kontextu jeho věku, vývojové úrovně, kognitivních schopností, vztahů, prostředí a aktuální životní situace. Stejné chování může mít u různých dětí odlišnou příčinu a význam. Proto nevycházím z univerzálního návodu, ale z individuálního posouzení potřeb dítěte a možností rodiny.</p>
+      </div>
+      <div class="approach-item">
+        <h3 data-i18n="approach.a3.title">Evidence-based přístup</h3>
+        <p data-i18n="approach.a3.p1">Doporučení opírám o poznatky současné psychologie, vývojové vědy, neuropsychologie a relevantního výzkumu. Současně je důležité, aby doporučení byla realistická. Strategie, která je teoreticky vhodná, ale rodina ji nedokáže dlouhodobě používat, nebude v praxi fungovat.</p>
+      </div>
+      <div class="approach-item">
+        <h3 data-i18n="approach.a4.title">Spolupráce s rodiči</h3>
+        <p data-i18n="approach.a4.p1">Rodiče nepovažuji za pasivní příjemce instrukcí. Znají své dítě, rodinné prostředí a každodenní realitu nejlépe. Mým úkolem je přinést odbornou perspektivu, pomoci problém strukturovat a společně s rodiči vytvořit postup, který je srozumitelný a proveditelný.</p>
+      </div>
+      <div class="approach-item">
+        <h3 data-i18n="approach.a5.title">Krátkodobá a cílená spolupráce</h3>
+        <p data-i18n="approach.a5.p1">Spolupráce má zpravidla jasně definovaný cíl a omezený počet setkání. Ne každá rodina potřebuje dlouhodobou péči. U některých problémů postačí jednorázová konzultace, u jiných je vhodná série několika setkání a následná kontrola. Pokud se ukáže, že dítě nebo rodič potřebují dlouhodobou psychoterapii, specializovanou diagnostiku, psychiatrickou péči nebo jinou službu, doporučím vhodný návazný postup.</p>
+      </div>
+      <div class="approach-item">
+        <h3 data-i18n="approach.a6.title">Důvěrnost a práce s dítětem</h3>
+        <p data-i18n="approach.a6.p1">Při individuální práci s dítětem mu způsobem přiměřeným věku vysvětluji, jak bude s informacemi nakládáno. Rodiče dostávají informace a doporučení potřebná k další podpoře dítěte. Neznamená to automaticky doslovné předávání všeho, co dítě během setkání sdělí. Výjimkou jsou situace, kdy vznikne obava o bezpečí dítěte nebo jiné osoby, případně situace, ve kterých je nutné postupovat podle zákonných povinností.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ODBORNÉ ZÁZEMÍ ============ -->
+  <section id="zazemi">
+    <h2 data-i18n="bg.title">Odborné zázemí</h2>
+    <p class="section-intro" data-i18n="bg.intro">Jsem vývojová a kognitivní psycholožka, psycholožka ve zdravotnictví, vědkyně a vysokoškolská pedagožka. Profesně se věnuji vývoji dítěte, neurovývoji, kognitivnímu fungování, duševnímu zdraví a převádění odborných poznatků do prakticky využitelných postupů.</p>
+
+    <div class="bg-grid">
+      <div class="bg-col">
+        <h3 data-i18n="bg.edu.title">Vzdělání</h3>
+        <div class="cv-item">
+          <h4 data-i18n="bg.edu.e1.title">Doktorské studium psychologie</h4>
+          <p class="cv-place" data-i18n="bg.edu.e1.place">Filozofická fakulta Univerzity Karlovy</p>
+          <p data-i18n="bg.edu.e1.body">V doktorském výzkumu se věnuji vztahu mezi dětským traumatem, biologickými mechanismy, neurovývojem a kognitivními trajektoriemi.</p>
+        </div>
+        <div class="cv-item">
+          <h4 data-i18n="bg.edu.e2.title">MSc Developmental Science</h4>
+          <p class="cv-place" data-i18n="bg.edu.e2.place">University of Edinburgh</p>
+          <p data-i18n="bg.edu.e2.body">Magisterské studium zaměřené na vývojovou vědu, vývojovou psychopatologii, klinickou neuropsychologii, statistiku a výzkum kognitivního vývoje.</p>
+        </div>
+        <div class="cv-item">
+          <h4 data-i18n="bg.edu.e3.title">BSc (Hons) Psychology</h4>
+          <p class="cv-place" data-i18n="bg.edu.e3.place">University of Lincoln</p>
+          <p data-i18n="bg.edu.e3.body">Studium psychologie akreditované Britskou psychologickou společností. Součástí studia byla vývojová psychologie, neuropsychologie, vývojová psychopatologie, poruchy autistického spektra, kognitivní psychologie a základy kognitivně-behaviorální terapie.</p>
+        </div>
+        <div class="cv-item">
+          <h4 data-i18n="bg.edu.e4.title">Psycholog ve zdravotnictví</h4>
+          <p class="cv-place" data-i18n="bg.edu.e4.place">Institut postgraduálního vzdělávání ve zdravotnictví</p>
+          <p data-i18n="bg.edu.e4.body">Absolvovala jsem kvalifikační vzdělávání a získala odbornou způsobilost psychologa ve zdravotnictví.</p>
+        </div>
+      </div>
+
+      <div class="bg-col">
+        <h3 data-i18n="bg.prax.title">Odborná praxe</h3>
+        <div class="cv-item">
+          <h4 data-i18n="bg.prax.p1.title">Národní ústav duševního zdraví</h4>
+          <p data-i18n="bg.prax.p1.body">Působila jsem jako kognitivní psycholožka a výzkumná pracovnice. Věnovala jsem se zejména výzkumu v oblasti duševního zdraví, wellbeingu, kognitivního tréninku a digitálních intervencí.</p>
+        </div>
+        <div class="cv-item">
+          <h4 data-i18n="bg.prax.p2.title">Dětská neuropsychologie, NHS Edinburgh</h4>
+          <p data-i18n="bg.prax.p2.body">Zkušenosti jsem získala na pracovišti dětské neuropsychologie a liaison služby v Royal Hospital for Children and Young People. Pod supervizí klinických psychologů jsem se podílela na psychologickém testování, multidisciplinární spolupráci a práci s dětskými pacienty.</p>
+        </div>
+        <div class="cv-item">
+          <h4 data-i18n="bg.prax.p3.title">Dětská psychiatrická nemocnice Louny</h4>
+          <p data-i18n="bg.prax.p3.body">Během stáže jsem se pod supervizí podílela na práci s dětmi a dospívajícími s různými psychickými obtížemi, na rozhovorech, psychologickém vyšetření, rodinných setkáních a práci se zdravotnickou dokumentací.</p>
+        </div>
+        <div class="cv-item">
+          <h4 data-i18n="bg.prax.p4.title">Výzkumný pobyt na Universität Wien</h4>
+          <p data-i18n="bg.prax.p4.body">Působila jsem jako hostující výzkumnice v laboratoři vývojové psychologie Wiener Kinderstudien.</p>
+        </div>
+
+        <h3 data-i18n="bg.teach.title">Výuka</h3>
+        <div class="cv-item">
+          <p data-i18n="bg.teach.body">Vyučuji vývojovou a edukativní psychologii na University of New York in Prague. Na Filozofické fakultě Univerzity Karlovy jsem vyučovala vývojovou neuropsychologii. Ve výuce se zaměřuji na lidský vývoj, typický a atypický neurovývoj, vývojovou psychopatologii a propojení výzkumu s praxí.</p>
+        </div>
+
+        <h3 data-i18n="bg.focus.title">Odborné zaměření</h3>
+        <ul class="tag-list" data-i18n-list="bg.focus.items">
+          <li>vývojová psychologie</li>
+          <li>kognitivní psychologie</li>
+          <li>vývojová neuropsychologie</li>
+          <li>neurovývojové obtíže</li>
+          <li>dětské trauma a stres</li>
+          <li>exekutivní funkce</li>
+          <li>pozornost a učení</li>
+          <li>psychologické poradenství pro rodiče</li>
+          <li>duševní zdraví dětí a rodin</li>
+          <li>aplikace výzkumných poznatků v praxi</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MÉDIA ============ -->
+  <section id="media">
+    <h2 data-i18n="media.title">Média a veřejná vystoupení</h2>
+
+    <div class="media-year">
+      <h3>2026</h3>
+      <div class="media-item">
+        <a href="https://podcasty.hn.cz/c1-67883890-bdquo-brainrot-ldquo-nejmladsi-generace-ma-prekvapivou-obdobu-u-starsich-lidi-a-jeji-obeti-je-i-prvni-cesky-terorista" target="_blank" rel="noopener">„Brainrot" nejmladší generace má překvapivou obdobu u starších lidí</a>
+        <p class="media-meta" data-i18n="media.m1.meta">29. května 2026 — Hospodářské noviny, podcast Generační konflikt</p>
+        <p data-i18n="media.m1.body">Podcastový rozhovor o vlivu digitálních technologií, sociálních sítí a rychlého online obsahu na pozornost, kognitivní fungování a psychiku.</p>
+      </div>
+      <div class="media-item">
+        <a href="https://archiv.hn.cz/c1-67877830-mlade-lidi-zasahla-bdquo-brainrot-ldquo-epidemie-kognitivni-upadek-jich-zaznamenava-cim-dal-vice-ukazuje-studie" target="_blank" rel="noopener">Mladé lidi zasáhla „brainrot" epidemie. Kognitivní úpadek jich zaznamenává čím dál více, ukazuje studie</a>
+        <p class="media-meta" data-i18n="media.m2.meta">19. května 2026 — Hospodářské noviny</p>
+        <p data-i18n="media.m2.body">Odborné vyjádření k problémům s pozorností a kognitivním fungováním u mladých lidí a k možným souvislostem s digitálními technologiemi.</p>
+      </div>
+      <div class="media-item">
+        <a href="https://vikend.hn.cz/c1-67848320-schvalne-kdo-nejdele-vydrzi-nesahnout-na-mobil-jak-ucinne-bojovat-proti-bdquo-brainrotu-ldquo-a-ziskat-zpet-pozornost" target="_blank" rel="noopener">Schválně, kdo nejdéle vydrží nesáhnout na mobil! Jak účinně bojovat proti „brainrotu" a získat zpět pozornost</a>
+        <p class="media-meta" data-i18n="media.m3.meta">27. února 2026 — Hospodářské noviny</p>
+        <p data-i18n="media.m3.body">Článek o pozornosti, psychické únavě a možnostech omezení negativních dopadů mobilních telefonů a rychlého digitálního obsahu.</p>
+      </div>
+    </div>
+
+    <div class="media-year">
+      <h3>2025</h3>
+      <div class="media-item">
+        <a href="https://www.youtube.com/watch?v=1oMSWa4NQVo" target="_blank" rel="noopener">Děti jsou na sítích rukojmí svých rodičů — Děti algoritmu (4)</a>
+        <p class="media-meta" data-i18n="media.m4.meta">30. července 2025 — podcast Pod vlivem</p>
+        <p data-i18n="media.m4.body">Rozhovor o sharentingu, soukromí dětí, digitální stopě, souhlasu dítěte a odpovědnosti rodičů při zveřejňování jeho života na internetu.</p>
+      </div>
+      <div class="media-item">
+        <a href="https://www.youtube.com/watch?v=p1Gcily5ics" target="_blank" rel="noopener">Mozek se může ze sledování reels uklidňovat až dvě hodiny — Děti algoritmu (3)</a>
+        <p class="media-meta" data-i18n="media.m5.meta">23. července 2025 — podcast Pod vlivem</p>
+        <p data-i18n="media.m5.body">Rozhovor o dopadech krátkého digitálního obsahu na pozornost, spánek, komunikaci a každodenní fungování dětí a dospívajících.</p>
+      </div>
+      <div class="media-item">
+        <a href="https://www.heroine.cz/vzdelavani/deti-jen-malokdy-nekomu-ublizi-bezduvodne-rika-psycholozka-ukazat-na-jeden-spoustec-ale-vetsinou-nejde" target="_blank" rel="noopener">Děti jen málokdy někomu ublíží bezdůvodně, říká psycholožka</a>
+        <p class="media-meta" data-i18n="media.m6.meta">21. června 2025 — Heroine</p>
+        <p data-i18n="media.m6.body">Rozhovor o agresivitě, násilí a šikaně mezi dětmi, emoční regulaci a vlivu rodinného a společenského prostředí.</p>
+      </div>
+      <div class="media-item">
+        <span class="media-nolink">U vysvědčení je na trest pozdě, zodpovědnost musí mít i rodič, říká psycholožka</span>
+        <p class="media-meta" data-i18n="media.m7.meta">19. června 2025 — Deník.cz</p>
+        <p data-i18n="media.m7.body">Rozhovor o reakcích rodičů na školní výsledky, přiměřených očekáváních, průběžné komunikaci a omezeném významu trestání na konci školního roku.</p>
+      </div>
+      <div class="media-item">
+        <a href="https://www.irozhlas.cz/zivotni-styl/zdravi/dopamin-je-system-odmeny-u-socialnich-siti-je-odmena-rychla-a-nepredvidatelna_2503201302_job" target="_blank" rel="noopener">Dopamin je systém odměny. U sociálních sítí je odměna rychlá a nepředvídatelná, říká psycholožka</a>
+        <p class="media-meta" data-i18n="media.m8.meta">20. března 2025 — iROZHLAS.cz</p>
+        <p data-i18n="media.m8.body">Rozhovor o dopaminu, motivaci a rychlých, nepředvídatelných odměnách spojených s používáním sociálních sítí.</p>
+      </div>
+      <div class="media-item">
+        <a href="https://archiv.hn.cz/c1-67655090-neni-to-jen-zvire-truchlit-za-zvireciho-mazlicka-je-v-poradku" target="_blank" rel="noopener">Není to jen zvíře. Truchlit za zvířecího mazlíčka je v pořádku</a>
+        <p class="media-meta" data-i18n="media.m9.meta">13. března 2025 — Hospodářské noviny</p>
+        <p data-i18n="media.m9.body">Odborné vyjádření k truchlení po smrti domácího zvířete, neuznané ztrátě, pocitům viny a možnostem rozloučení.</p>
+      </div>
+      <div class="media-item">
+        <span class="media-nolink">Střepiny: Každý čtvrtý dospívající v Česku je rizikovým uživatelem technologií</span>
+        <p class="media-meta" data-i18n="media.m10.meta">23. února 2025 — TV Nova, pořad Střepiny</p>
+        <p data-i18n="media.m10.body">Televizní vystoupení o rizikovém používání digitálních technologií mezi dospívajícími a jeho dopadech na duševní zdraví a každodenní fungování.</p>
+      </div>
+      <div class="media-item">
+        <a href="https://www.metro.cz/kraje/stredocesky-kraj/psycholozka-izolace-za-covidu-ovlivnila-mlade-v-socialni-i-komunikacni-oblasti.A250222_074631_metro-praha-zpravy_air" target="_blank" rel="noopener">Psycholožka: Izolace za covidu ovlivnila mladé v sociální i komunikační oblasti</a>
+        <p class="media-meta" data-i18n="media.m11.meta">22. února 2025 — Metro.cz / ČTK</p>
+        <p data-i18n="media.m11.body">Odborné vyjádření k dlouhodobým dopadům pandemické izolace na sociální dovednosti, komunikaci a navazování vztahů mladých lidí.</p>
+      </div>
+    </div>
+
+    <div class="media-year">
+      <h3>2024</h3>
+      <div class="media-item">
+        <a href="https://plus.rozhlas.cz/rozkladaji-site-lidem-mozek-je-sebeironie-rika-expert-psycholozka-site-ztezuji-9383489" target="_blank" rel="noopener">Rozkládají sítě lidem mozek? Psycholožka: Sítě ztěžují soustředění</a>
+        <p class="media-meta" data-i18n="media.m12.meta">31. prosince 2024 — Český rozhlas Plus, pořad Pro a proti</p>
+        <p data-i18n="media.m12.body">Rozhlasová debata o fenoménu „brain rot", rychlém obsahu na sociálních sítích a jeho možném vlivu na pozornost a kognitivní fungování.</p>
+      </div>
+      <div class="media-item">
+        <a href="https://www.idnes.cz/zpravy/domaci/bitka-clash-of-the-stars-deti-nasili-vysetrovani-policie.A241208_174839_domaci_stud" target="_blank" rel="noopener">Děti si hrají na Clash of Stars. Násilné bitky vyšetřuje policie</a>
+        <p class="media-meta" data-i18n="media.m13.meta">8. prosince 2024 — iDNES.cz</p>
+        <p data-i18n="media.m13.body">Odborné vyjádření k dětským bitkám inspirovaným internetovými zápasnickými formáty, nápodobě násilí a vlivu sociálních sítí.</p>
+      </div>
+      <div class="media-item">
+        <span class="media-nolink">Střepiny: Generace Z</span>
+        <p class="media-meta" data-i18n="media.m14.meta">27. října 2024 — TV Nova, pořad Střepiny</p>
+        <p data-i18n="media.m14.body">Televizní vystoupení zaměřené na generaci Z, její psychické zdraví, hodnoty a zkušenosti v současném společenském a digitálním prostředí.</p>
+      </div>
+      <div class="media-item">
+        <a href="https://www.respekt.cz/tydenik/2024/44/mami-hlavne-mi-nevolej-proc-je-uplne-normalni-ze-nenavidite-telefonovani" target="_blank" rel="noopener">Mami, hlavně mi nevolej. Proč je úplně normální, že nenávidíte telefonování</a>
+        <p class="media-meta" data-i18n="media.m15.meta">23. října 2024 — Respekt</p>
+        <p data-i18n="media.m15.body">Odborné vyjádření k preferenci textové komunikace, nárokům telefonního hovoru na pozornost a stresu spojenému s nutností okamžité reakce.</p>
+      </div>
+      <div class="media-item">
+        <a href="https://www.novinky.cz/clanek/zdravi-v-britanii-cekaji-deti-na-termin-u-psychologa-i-pet-let-cesko-tezi-z-obetavosti-lici-psycholozka-40487488" target="_blank" rel="noopener">V Británii čekají děti na termín u psychologa i pět let, líčí psycholožka</a>
+        <p class="media-meta" data-i18n="media.m16.meta">9. října 2024 — Novinky.cz a Právo</p>
+        <p data-i18n="media.m16.body">Rozhovor o dostupnosti dětské psychologické a psychiatrické péče v České republice a Velké Británii a o vzdělávání psychologů ve zdravotnictví.</p>
+      </div>
+      <div class="media-item">
+        <a href="https://radiozurnal.rozhlas.cz/antivirus-mnozstvi-znudenych-deti-ve-skolach-je-porad-stejne-nezalezi-na-zakazu-9308567" target="_blank" rel="noopener">Antivirus: Množství znuděných dětí ve školách je pořád stejné</a>
+        <p class="media-meta" data-i18n="media.m17.meta">9. září 2024 — Český rozhlas Radiožurnál, pořad Antivirus</p>
+        <p data-i18n="media.m17.body">Odborné vyjádření k používání mobilních telefonů ve školách, pozornosti, sebekontrole dospívajících, kyberšikaně a omezením plošných zákazů.</p>
+      </div>
+      <div class="media-item">
+        <a href="https://www.epochtimes.cz/2024/06/25/jak-resit-psychicke-problemy-svych-deti-poradime-vam-kam-se-obratit/" target="_blank" rel="noopener">Jak řešit psychické problémy svých dětí? Poradíme vám, kam se obrátit</a>
+        <p class="media-meta" data-i18n="media.m18.meta">25. června 2024 — The Epoch Times ČR</p>
+        <p data-i18n="media.m18.body">Odborné vyjádření k psychickým obtížím dospívajících, komunikaci v rodině a situacím, kdy je vhodné vyhledat odbornou pomoc.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CENÍK ============ -->
+  <section id="cenik">
+    <h2 data-i18n="pricing.title">Ceník služeb</h2>
+
+    <div class="price-group">
+      <h3 data-i18n="pricing.g1.title">Konzultace pro rodiče</h3>
+      <div class="price-row">
+        <div class="price-info">
+          <span class="price-name" data-i18n="pricing.g1.r1.name">Jednorázová rodičovská konzultace</span>
+          <span class="price-desc" data-i18n="pricing.g1.r1.desc">Praktická konzultace zaměřená na konkrétní otázku, rodičovský postup, vývoj dítěte nebo náročnou situaci doma.</span>
+        </div>
+        <span class="price"><span data-i18n="pricing.g1.r1.dur">60 minut</span> — 2 500 Kč</span>
+      </div>
+      <div class="price-row">
+        <div class="price-info">
+          <span class="price-name" data-i18n="pricing.g1.r2.name">Rozšířená rodičovská konzultace</span>
+          <span class="price-desc" data-i18n="pricing.g1.r2.desc">Vhodná pro složitější situace, více témat nebo společnou konzultaci obou rodičů.</span>
+        </div>
+        <span class="price"><span data-i18n="pricing.g1.r2.dur">90 minut</span> — 3 500 Kč</span>
+      </div>
+      <div class="price-row">
+        <div class="price-info">
+          <span class="price-name" data-i18n="pricing.g1.r3.name">Následná rodičovská konzultace</span>
+          <span class="price-desc" data-i18n="pricing.g1.r3.desc">Kontrola zavedených kroků a úprava dalšího postupu.</span>
+        </div>
+        <span class="price"><span data-i18n="pricing.g1.r3.dur">50 minut</span> — 2 200 Kč</span>
+      </div>
+    </div>
+
+    <div class="price-group">
+      <h3 data-i18n="pricing.g2.title">Setkání s dítětem a rodinou</h3>
+      <div class="price-row">
+        <div class="price-info">
+          <span class="price-name" data-i18n="pricing.g2.r1.name">Individuální setkání s dítětem</span>
+          <span class="price-desc" data-i18n="pricing.g2.r1.desc">Individuální setkání je nabízeno po předchozí konzultaci s rodičem.</span>
+        </div>
+        <span class="price"><span data-i18n="pricing.g2.r1.dur">50 minut</span> — 2 300 Kč</span>
+      </div>
+      <div class="price-row">
+        <div class="price-info">
+          <span class="price-name" data-i18n="pricing.g2.r2.name">Společné setkání rodiče a dítěte</span>
+        </div>
+        <span class="price"><span data-i18n="pricing.g2.r2.dur">75 minut</span> — 3 200 Kč</span>
+      </div>
+      <div class="price-row">
+        <div class="price-info">
+          <span class="price-name" data-i18n="pricing.g2.r3.name">Rodinná konzultace</span>
+        </div>
+        <span class="price"><span data-i18n="pricing.g2.r3.dur">90 minut</span> — 3 800 Kč</span>
+      </div>
+    </div>
+
+    <div class="price-group">
+      <h3 data-i18n="pricing.g3.title">Konzultace odborné zprávy</h3>
+      <div class="price-row">
+        <div class="price-info">
+          <span class="price-name" data-i18n="pricing.g3.r1.name">Konzultace odborné zprávy</span>
+          <span class="price-desc" data-i18n="pricing.g3.r1.desc">Včetně předchozího prostudování jednoho dokumentu běžného rozsahu. Cena může být upravena v případě většího množství nebo mimořádného rozsahu dokumentace.</span>
+        </div>
+        <span class="price"><span data-i18n="pricing.g3.r1.dur">75 minut</span> — 3 200 Kč</span>
+      </div>
+    </div>
+
+    <div class="price-group">
+      <h3 data-i18n="pricing.g4.title">Krátkodobé programy</h3>
+      <div class="price-row">
+        <div class="price-info">
+          <span class="price-name" data-i18n="pricing.g4.r1.name">Rodičovský akční plán</span>
+          <span class="price-desc" data-i18n="pricing.g4.r1.desc">Program je vhodný pro rodiče, kteří chtějí systematicky pracovat na konkrétní oblasti fungování doma. Zahrnuje vstupní rodičovskou konzultaci, následnou konzultaci, závěrečnou konzultaci, písemný akční plán a jednu drobnou úpravu plánu.</span>
+        </div>
+        <span class="price"><span data-i18n="pricing.g4.r1.dur">3 konzultace a písemný plán</span> — 8 900 Kč</span>
+      </div>
+      <div class="price-row">
+        <div class="price-info">
+          <span class="price-name" data-i18n="pricing.g4.r2.name">Individuální plán podpory dítěte</span>
+          <span class="price-desc" data-i18n="pricing.g4.r2.desc">Program je vhodný pro rodiny řešící neurovývojové obtíže, významnou životní změnu nebo komplexnější problém v každodenním fungování. Zahrnuje vstupní konzultaci s rodičem nebo rodiči, setkání s dítětem, společné nebo zaměřené setkání, závěrečnou konzultaci, písemný individuální plán a jednu následnou úpravu plánu.</span>
+        </div>
+        <span class="price"><span data-i18n="pricing.g4.r2.dur">4 setkání a písemný plán</span> — 13 900 Kč</span>
+      </div>
+      <div class="price-row">
+        <div class="price-info">
+          <span class="price-name" data-i18n="pricing.g4.r3.name">Rozšířená podpora rodiny</span>
+          <span class="price-desc" data-i18n="pricing.g4.r3.desc">Program je nabízen po úvodní konzultaci podle potřeb rodiny.</span>
+        </div>
+        <span class="price"><span data-i18n="pricing.g4.r3.dur">6 setkání, písemný plán a následná kontrola</span> — 18 900 Kč</span>
+      </div>
+    </div>
+
+    <div class="price-group">
+      <h3 data-i18n="pricing.g5.title">Další služby</h3>
+      <div class="price-row">
+        <div class="price-info">
+          <span class="price-name" data-i18n="pricing.g5.r1.name">Krátká odborná konzultace pro stávající klienty</span>
+        </div>
+        <span class="price"><span data-i18n="pricing.g5.r1.dur">25 minut</span> — 1 300 Kč</span>
+      </div>
+      <div class="price-row">
+        <div class="price-info">
+          <span class="price-name" data-i18n="pricing.g5.r2.name">Konzultace se školou nebo spolupracujícím odborníkem</span>
+          <span class="price-desc" data-i18n="pricing.g5.r2.desc">Služba je poskytována se souhlasem zákonného zástupce.</span>
+        </div>
+        <span class="price"><span data-i18n="pricing.g5.r2.dur">50 minut</span> — 2 500 Kč</span>
+      </div>
+      <div class="price-row">
+        <div class="price-info">
+          <span class="price-name" data-i18n="pricing.g5.r3.name">Samostatné písemné doporučení po předchozí konzultaci</span>
+        </div>
+        <span class="price" data-i18n="pricing.g5.r3.price">Od 2 500 Kč podle rozsahu</span>
+      </div>
+    </div>
+
+    <div class="pricing-notes">
+      <div class="pricing-note">
+        <h4 data-i18n="pricing.intro.title">Úvodní kontakt</h4>
+        <p data-i18n="pricing.intro.body">Krátký organizační telefonát v délce 10 až 15 minut je zdarma. Slouží k základnímu ověření, zda je nabízený typ služby pro danou situaci vhodný. Nejedná se o psychologickou konzultaci. Online a osobní konzultace mají stejnou cenu.</p>
+      </div>
+      <div class="pricing-note">
+        <h4 data-i18n="pricing.storno.title">Storno podmínky</h4>
+        <p data-i18n="pricing.storno.body">Domluvený termín je možné bezplatně zrušit nebo přesunout nejpozději 24 hodin před jeho začátkem. Při pozdějším zrušení nebo nedostavení se může být účtována plná cena konzultace.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ČASTÉ OTÁZKY ============ -->
+  <section id="faq">
+    <h2 data-i18n="faq.title">Časté otázky</h2>
+    <div class="accordion-group">
+      <details class="faq-acc">
+        <summary data-i18n="faq.q1.q">Musí se konzultace účastnit dítě?</summary>
+        <div class="acc-body"><p data-i18n="faq.q1.a">Ne. První konzultace často probíhá pouze s rodičem nebo rodiči. Podle povahy situace se následně domluvíme, zda je zapojení dítěte vhodné.</p></div>
+      </details>
+      <details class="faq-acc">
+        <summary data-i18n="faq.q2.q">Mohu přijít pouze na jednu konzultaci?</summary>
+        <div class="acc-body"><p data-i18n="faq.q2.a">Ano. Některé rodičovské otázky lze dobře probrat během jednoho setkání. Na konci konzultace se domluvíme, zda je další spolupráce potřebná.</p></div>
+      </details>
+      <details class="faq-acc">
+        <summary data-i18n="faq.q3.q">Provádíte diagnostiku ADHD nebo autismu?</summary>
+        <div class="acc-body"><p data-i18n="faq.q3.a">V rámci této poradenské služby novou diagnózu nestanovuji. Mohu ale pomoci vysvětlit již dostupné výsledky a doporučení a převést je do praktických strategií.</p></div>
+      </details>
+      <details class="faq-acc">
+        <summary data-i18n="faq.q4.q">Dítě už má diagnózu. Můžeme přijít, i když nehledáme terapii?</summary>
+        <div class="acc-body"><p data-i18n="faq.q4.a">Ano. Významnou část služby tvoří právě pomoc rodičům, kteří mají k dispozici diagnózu nebo odbornou zprávu, ale potřebují vědět, co z ní prakticky vyplývá pro fungování doma nebo ve škole.</p></div>
+      </details>
+      <details class="faq-acc">
+        <summary data-i18n="faq.q5.q">Je služba psychoterapií?</summary>
+        <div class="acc-body"><p data-i18n="faq.q5.a">Ne. Nabízím krátkodobé psychologické poradenství zaměřené na konkrétní cíle, praktické strategie a podporu dítěte a rodiny. Pokud je vhodná dlouhodobá psychoterapie, doporučím další postup.</p></div>
+      </details>
+      <details class="faq-acc">
+        <summary data-i18n="faq.q6.q">Pracujete také samostatně s dětmi?</summary>
+        <div class="acc-body"><p data-i18n="faq.q6.a">Ano, ale zpravidla až po úvodní konzultaci s rodičem. Individuální práce s dítětem je krátkodobá a zůstává propojená s celkovou spoluprací s rodinou.</p></div>
+      </details>
+      <details class="faq-acc">
+        <summary data-i18n="faq.q7.q">Co když jsou rodiče rozvedení?</summary>
+        <div class="acc-body"><p data-i18n="faq.q7.a">Před zahájením práce s dítětem je potřeba vyjasnit uspořádání péče, rodičovskou odpovědnost a souhlasy zákonných zástupců. Poradenství není určeno k hodnocení rodičovských kompetencí, shromažďování důkazů proti druhému rodiči ani k vypracování podkladů pro soudní spor.</p></div>
+      </details>
+      <details class="faq-acc">
+        <summary data-i18n="faq.q8.q">Vypracováváte zprávy pro soud?</summary>
+        <div class="acc-body"><p data-i18n="faq.q8.a">Ne. Nevypracovávám znalecké posudky, hodnocení rodičovských kompetencí ani doporučení týkající se svěření dítěte do péče.</p></div>
+      </details>
+      <details class="faq-acc">
+        <summary data-i18n="faq.q9.q">Jak dlouho spolupráce trvá?</summary>
+        <div class="acc-body"><p data-i18n="faq.q9.a">Podle povahy situace může jít o jedno setkání nebo přibližně tři až šest konzultací.</p></div>
+      </details>
+      <details class="faq-acc">
+        <summary data-i18n="faq.q10.q">Probíhají konzultace také online?</summary>
+        <div class="acc-body"><p data-i18n="faq.q10.a">Ano. Rodičovské konzultace a konzultace zpráv mohou probíhat osobně nebo online. Vhodnost online setkání s dítětem se posuzuje individuálně.</p></div>
+      </details>
+      <details class="faq-acc">
+        <summary data-i18n="faq.q11.q">Nabízíte konzultace v angličtině?</summary>
+        <div class="acc-body"><p data-i18n="faq.q11.a">Ano. Konzultace mohou probíhat v češtině nebo angličtině.</p></div>
+      </details>
+    </div>
+  </section>
+
+  <!-- ============ KONTAKT ============ -->
+  <section id="kontakt">
+    <div class="kontakt-intro">
+      <h2 data-i18n="contact.title">Kontakt a objednání</h2>
+      <p data-i18n="contact.intro">Pro objednání konzultace mě můžete kontaktovat prostřednictvím formuláře nebo e-mailem. Do zprávy prosím stručně uveďte:</p>
+      <ul data-i18n-list="contact.items">
+        <li>věk dítěte,</li>
+        <li>hlavní důvod konzultace,</li>
+        <li>zda máte zájem o osobní, nebo online setkání,</li>
+        <li>případně zda máte k dispozici odbornou zprávu.</li>
+      </ul>
+      <p class="contact-details">
+        <span data-i18n="contact.emailLabel">E-mail:</span> <a href="mailto:natalie.bergmann.sci@gmail.com">natalie.bergmann.sci@gmail.com</a><br>
+        <span data-i18n="contact.langs">Jazyky konzultace: čeština a angličtina</span><br>
+        <span data-i18n="contact.address">Přesnou adresu osobního setkání obdržíte po potvrzení termínu.</span>
+      </p>
+    </div>
+
+    <div class="form-card">
+      <h2 data-i18n="contact.formTitle">Napište mi</h2>
+      <!-- FormSubmit: the very first submission sends an activation e-mail to this address; click the link in it once to start receiving messages -->
+      <form action="https://formsubmit.co/natalie.bergmann.sci@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Nová poptávka z webu" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <div class="form-field">
+          <label for="f-name">
+            <span data-i18n="contact.name">Jméno a příjmení</span>
+            <span data-i18n="contact.required">(povinné)</span>
+          </label>
+          <input type="text" id="f-name" name="name" required />
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="f-email">
+              <span data-i18n="contact.email">E-mail</span>
+              <span data-i18n="contact.required">(povinné)</span>
+            </label>
+            <input type="email" id="f-email" name="email" required />
+          </div>
+          <div class="form-field">
+            <label for="f-phone" data-i18n="contact.phone">Telefon</label>
+            <input type="tel" id="f-phone" name="phone" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="f-age" data-i18n="contact.childAge">Věk dítěte</label>
+            <input type="text" id="f-age" name="child_age" />
+          </div>
+          <div class="form-field">
+            <label for="f-service" data-i18n="contact.service">O jaký typ služby máte zájem?</label>
+            <select id="f-service" name="service">
+              <option value="rodicovska-konzultace" data-i18n="contact.serviceOpts.o1">rodičovská konzultace</option>
+              <option value="rozsirena-konzultace" data-i18n="contact.serviceOpts.o2">rozšířená rodičovská konzultace</option>
+              <option value="odborna-zprava" data-i18n="contact.serviceOpts.o3">konzultace odborné zprávy</option>
+              <option value="adhd-neurovyvoj" data-i18n="contact.serviceOpts.o4">podpora při ADHD nebo jiné neurovývojové obtíži</option>
+              <option value="podpora-rodiny" data-i18n="contact.serviceOpts.o5">podpora rodiny v období změny</option>
+              <option value="jine" data-i18n="contact.serviceOpts.o6">jiná situace</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="f-message">
+            <span data-i18n="contact.message">Stručně popište, s čím se na mě obracíte</span>
+            <span data-i18n="contact.required">(povinné)</span>
+          </label>
+          <textarea id="f-message" name="message" required></textarea>
+        </div>
+        <fieldset class="form-field form-radios">
+          <legend data-i18n="contact.prefer">Preferujete:</legend>
+          <label><input type="radio" name="format" value="osobni" /> <span data-i18n="contact.preferOpts.o1">osobní konzultaci</span></label>
+          <label><input type="radio" name="format" value="online" /> <span data-i18n="contact.preferOpts.o2">online konzultaci</span></label>
+          <label><input type="radio" name="format" value="obe" checked /> <span data-i18n="contact.preferOpts.o3">obě možnosti</span></label>
+        </fieldset>
+        <label class="form-consent">
+          <input type="checkbox" name="gdpr" required />
+          <span data-i18n="contact.gdpr">Souhlasím se zpracováním osobních údajů za účelem odpovědi na můj dotaz.</span>
+        </label>
+        <button type="submit" class="btn-submit" data-i18n="contact.send">Odeslat poptávku</button>
+      </form>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p data-i18n="footer.desc">Krátkodobé psychologické poradenství pro rodiče, děti a rodiny. Rodičovské strategie, neurovývojové obtíže, ADHD, významné životní změny a praktické využití psychologických doporučení.</p>
+    <p data-i18n="footer.copy">&copy; 2026 Natálie Bergmann. Všechna práva vyhrazena.</p>
+  </footer>
+
+  <script>
+    /* Překlady */
+    const translations = {
+      cs: {},   // auto-filled from the DOM on load
+      en: {
+        'nav.home':        'Home',
+        'nav.services':    'Services',
+        'nav.approach':    'How I work',
+        'nav.background':  'Background',
+        'nav.pricing':     'Pricing',
+        'nav.faq':         'FAQ',
+        'nav.contact':     'Contact',
+
+        'hero.title':  'A clearer path to understanding your child',
+        'hero.body':   'I help parents translate professional recommendations into concrete steps that work in everyday life.',
+        'hero.body2':  'Short-term counselling focused on parenting strategies, neurodevelopmental difficulties and supporting families through times of big change.',
+        'hero.cta1':   'Book a consultation',
+        'hero.cta2':   'View services',
+
+        'topics.title':    'What you can bring to me',
+        'topics.t1.title': 'Parenting questions and challenging behaviour',
+        'topics.t1.body':  'Consultations may focus, for example, on setting boundaries, communicating with your child, strong emotions, tantrums, sibling conflicts, daily routines, motivation, cooperation, or uncertainty about parenting approaches.',
+        'topics.t2.title': 'ADHD, autism and other neurodevelopmental difficulties',
+        'topics.t2.body':  'If your child already has a diagnosis but it is unclear how to work with it in everyday life, we can focus on practical strategies for home, school, organisation, attention, executive functions and emotion regulation.',
+        'topics.t2.note':  'I do not carry out new diagnostic assessment within this service. I help parents understand what existing conclusions mean for the child\u2019s everyday functioning.',
+        'topics.t3.title': 'Divorce, loss and major life changes',
+        'topics.t3.body':  'I offer short-term support to families going through parental separation or divorce, a death in the family, moving house, changing schools, the arrival of a new partner, or another significant change.',
+        'topics.t4.title': 'Psychological and school reports',
+        'topics.t4.body':  'I will help you understand the conclusions and recommendations of a psychological assessment, an educational-psychological counselling centre, a special education centre or another professional workplace, and turn them into a concrete plan of action.',
+
+        'collab.title': 'What working together can look like',
+        'collab.intro': 'Depending on the situation, our cooperation may include:',
+        'collab.items': [
+          'a one-off consultation with a parent or parents,',
+          'several short-term parenting consultations,',
+          'a joint session with parent and child,',
+          'short-term individual work with the child,',
+          'a family consultation,',
+          'an explanation of a professional report,',
+          'creating an individual plan for the home environment.'
+        ],
+        'collab.outro': 'The scope of our cooperation always follows the family\u2019s needs. Not every situation requires long-term psychotherapy. Sometimes parents primarily need to understand the problem more precisely, set an achievable goal and gain concrete strategies.',
+
+        'expect.title': 'What you can expect',
+        'expect.intro': 'My work is grounded in developmental and cognitive psychology and in a solution-focused approach. We do not concentrate only on what isn\u2019t working. We are also interested in:',
+        'expect.items': [
+          'what the family already manages well,',
+          'when the problem occurs less,',
+          'what helps the child,',
+          'what concrete goal is realistic,',
+          'what changes can be tried at home,',
+          'how we will recognise progress.'
+        ],
+        'expect.outro': 'The aim of our cooperation is for parents to better understand their child\u2019s needs and have a clearer idea of what they can do in practice.',
+
+        'who.title': 'Who I am',
+        'who.body':  'I am a developmental and cognitive psychologist, a licensed healthcare psychologist, a researcher and a university lecturer. In my work I connect the findings of contemporary psychology and research with practical recommendations for children, parents and families.',
+        'who.cta':   'More about my professional background',
+
+        'cta.title':  'Need clarity on how to support your child?',
+        'cta.body':   'A one-off parenting consultation can be the first step. Together we will map the situation, set the main goal and agree whether one session is enough or whether short-term cooperation is appropriate.',
+        'cta.button': 'Book a consultation',
+
+        'services.title': 'Psychological services',
+        'services.intro': 'I offer short-term psychological counselling for parents, children and families. The specific form of our cooperation depends on the nature of the problem, the child\u2019s age and the goal the family wants to achieve.',
+
+        'services.s1.title': 'Parenting consultation',
+        'services.s1.p1': 'A parenting consultation is intended for parents who want to discuss a specific situation, their child\u2019s behaviour or their own parenting approach. It may concern, for example:',
+        'services.s1.items': [
+          'setting boundaries,', 'communication and cooperation,', 'strong emotions and tantrums,',
+          'sibling conflicts,', 'motivation and rewards,', 'home routines,',
+          'use of digital technologies,', 'starting nursery or school,', 'adapting to change,',
+          'uncertainty about whether the parent is responding appropriately.'
+        ],
+        'services.s1.p2': 'The consultation is practical and educational in focus. It is not psychotherapy for the parent. Depending on your needs, it may be a one-off session or several follow-up consultations.',
+
+        'services.s2.title': 'Support with ADHD and other neurodevelopmental difficulties',
+        'services.s2.p1': 'This service is intended for parents of children who already have a diagnosis or professional conclusions, but the family needs to better understand their practical meaning. We can focus, for example, on:',
+        'services.s2.items': [
+          'how attention works,', 'impulsivity,', 'planning and organisation,',
+          'starting and finishing tasks,', 'working memory,', 'emotion regulation,',
+          'transitions between activities,', 'school preparation,', 'setting appropriate expectations,',
+          'adjusting the home environment and routines,', 'communication with school.'
+        ],
+        'services.s2.p2': 'The aim is not merely to describe the diagnosis but to translate it into concrete practices usable in the family\u2019s everyday life. This service does not include new diagnostic assessment or a review of an already established diagnosis.',
+
+        'services.s3.title': 'Professional report consultation',
+        'services.s3.p1': 'Parents may bring or send in advance a report from a psychological, neuropsychological, psychiatric, school-based or special education assessment. During the consultation we can go through:',
+        'services.s3.items': [
+          'what the individual conclusions mean,', 'how they may show up at home and at school,',
+          'which recommendations are the most important,', 'what can be introduced immediately,',
+          'how to adapt the recommendations to your particular child,',
+          'which questions are worth asking the school or other professionals.'
+        ],
+        'services.s3.p2': 'This is not a second diagnostic opinion. The service focuses on explaining and practically using the available conclusions in everyday life.',
+
+        'services.s4.title': 'Supporting the family through change',
+        'services.s4.p1': 'Short-term counselling can help families going through, for example:',
+        'services.s4.items': [
+          'parental separation or divorce,', 'changes in care arrangements and moving between households,',
+          'a death or other significant loss,', 'moving house,', 'changing schools,',
+          'the arrival of a parent\u2019s new partner,', 'the birth of a sibling,',
+          'long-term illness of a family member,', 'another significant change in family life.'
+        ],
+        'services.s4.p2': 'The aim is not to remove the child\u2019s natural emotions. We focus on helping the child understand the situation, increasing their sense of safety, and setting up a way of communicating and supporting that is sustainable in the long run.',
+
+        'services.s5.title': 'Individual sessions with the child',
+        'services.s5.p1': 'In some cases, short-term individual work with the child can be part of our cooperation. A session may focus on:',
+        'services.s5.items': [
+          'understanding emotions,', 'coping with change,', 'finding strategies for difficult situations,',
+          'strengthening the ability to express one\u2019s needs,',
+          'working with attention, planning or self-regulation,', 'practising specific skills.'
+        ],
+        'services.s5.p2': 'I usually offer individual sessions with a child only after an initial consultation with the parent. Work with the child is not separate from the family context, and parents remain an important part of our cooperation.',
+
+        'services.s6.title': 'Joint parent–child session',
+        'services.s6.p1': 'A joint session may be appropriate when it is useful to:',
+        'services.s6.items': [
+          'observe mutual communication,', 'practise a specific situation,',
+          'support the child in expressing their needs,', 'set shared rules,',
+          'try out new parental responses,', 'create an agreement or a shared plan.'
+        ],
+
+        'services.s7.title': 'Family consultation',
+        'services.s7.p1': 'A family consultation is intended for situations where it is appropriate to involve more family members. It is not long-term family psychotherapy. The consultation has a clearly defined topic and a practical goal.',
+
+        'services.s8.title': 'Individual support plan',
+        'services.s8.p1': 'For more complex situations, the outcome of our cooperation may be a written plan for the family. The plan may include:',
+        'services.s8.items': [
+          'the main goal of our cooperation,', 'an explanation of the child\u2019s needs,',
+          'concrete recommendations for parents,', 'suitable phrasing and ways of communicating,',
+          'adjustments to home routines,', 'strategies for difficult situations,',
+          'recommendations for support at school,', 'a way of tracking progress,',
+          'situations in which further professional care should be sought.'
+        ],
+        'services.s8.p2': 'It is not a diagnostic finding or an expert opinion. The plan is a practical working document for the family.',
+
+        'approach.title': 'How I work',
+        'approach.a1.title': 'A solution-focused approach',
+        'approach.a1.p1': 'In my work I use the principles of the solution-focused approach. This means that alongside a detailed understanding of the problem, we also pay attention to:',
+        'approach.a1.items': [
+          'what the family wants to achieve,', 'what already works at least partially,',
+          'when the problem occurs less,', 'what strengths the child and their family have,',
+          'what smallest useful step can be taken now.'
+        ],
+        'approach.a1.p2': 'Focusing on solutions does not mean overlooking difficult emotions, trauma or loss. It means connecting an understanding of the problem with a search for concrete ways forward.',
+        'approach.a2.title': 'A developmental perspective',
+        'approach.a2.p1': 'I assess a child\u2019s behaviour in the context of their age, developmental level, cognitive abilities, relationships, environment and current life situation. The same behaviour can have a different cause and meaning in different children. That is why I do not work from a universal manual but from an individual assessment of the child\u2019s needs and the family\u2019s possibilities.',
+        'approach.a3.title': 'An evidence-based approach',
+        'approach.a3.p1': 'My recommendations are grounded in the findings of contemporary psychology, developmental science, neuropsychology and relevant research. At the same time, recommendations need to be realistic. A strategy that is theoretically suitable but that the family cannot sustain in the long run will not work in practice.',
+        'approach.a4.title': 'Working with parents',
+        'approach.a4.p1': 'I do not regard parents as passive recipients of instructions. They know their child, their family environment and everyday reality best. My task is to bring a professional perspective, help structure the problem and, together with the parents, create an approach that is understandable and feasible.',
+        'approach.a5.title': 'Short-term, focused cooperation',
+        'approach.a5.p1': 'Our cooperation usually has a clearly defined goal and a limited number of sessions. Not every family needs long-term care. Some problems can be addressed in a single consultation; others call for a series of sessions and a follow-up. If it turns out that the child or parent needs long-term psychotherapy, specialised assessment, psychiatric care or another service, I will recommend an appropriate next step.',
+        'approach.a6.title': 'Confidentiality and work with the child',
+        'approach.a6.p1': 'When working individually with a child, I explain to them in an age-appropriate way how their information will be handled. Parents receive the information and recommendations needed to further support their child. This does not automatically mean passing on everything the child says during a session verbatim. Exceptions are situations where there is concern for the safety of the child or another person, or situations in which legal obligations must be followed.',
+
+        'bg.title': 'Professional background',
+        'bg.intro': 'I am a developmental and cognitive psychologist, a licensed healthcare psychologist, a researcher and a university lecturer. Professionally, I focus on child development, neurodevelopment, cognitive functioning, mental health, and translating professional knowledge into practically usable approaches.',
+        'bg.edu.title': 'Education',
+        'bg.edu.e1.title': 'Doctoral studies in Psychology',
+        'bg.edu.e1.place': 'Faculty of Arts, Charles University',
+        'bg.edu.e1.body': 'My doctoral research focuses on the relationship between childhood trauma, biological mechanisms, neurodevelopment and cognitive trajectories.',
+        'bg.edu.e2.title': 'MSc Developmental Science',
+        'bg.edu.e2.place': 'University of Edinburgh',
+        'bg.edu.e2.body': 'A master\u2019s programme focused on developmental science, developmental psychopathology, clinical neuropsychology, statistics and research on cognitive development.',
+        'bg.edu.e3.title': 'BSc (Hons) Psychology',
+        'bg.edu.e3.place': 'University of Lincoln',
+        'bg.edu.e3.body': 'A psychology degree accredited by the British Psychological Society. The programme included developmental psychology, neuropsychology, developmental psychopathology, autism spectrum conditions, cognitive psychology and the foundations of cognitive-behavioural therapy.',
+        'bg.edu.e4.title': 'Healthcare psychologist',
+        'bg.edu.e4.place': 'Institute for Postgraduate Medical Education',
+        'bg.edu.e4.body': 'I completed the qualification training and obtained professional certification as a psychologist in healthcare.',
+        'bg.prax.title': 'Professional experience',
+        'bg.prax.p1.title': 'National Institute of Mental Health',
+        'bg.prax.p1.body': 'I worked as a cognitive psychologist and researcher, focusing mainly on research in mental health, wellbeing, cognitive training and digital interventions.',
+        'bg.prax.p2.title': 'Paediatric neuropsychology, NHS Edinburgh',
+        'bg.prax.p2.body': 'I gained experience at the paediatric neuropsychology and liaison service of the Royal Hospital for Children and Young People. Under the supervision of clinical psychologists, I took part in psychological testing, multidisciplinary cooperation and work with child patients.',
+        'bg.prax.p3.title': 'Children\u2019s Psychiatric Hospital Louny',
+        'bg.prax.p3.body': 'During my placement, under supervision, I took part in work with children and adolescents with a range of mental health difficulties, in interviews, psychological assessment, family meetings and work with medical documentation.',
+        'bg.prax.p4.title': 'Research stay at Universität Wien',
+        'bg.prax.p4.body': 'I worked as a visiting researcher in the developmental psychology laboratory Wiener Kinderstudien.',
+        'bg.teach.title': 'Teaching',
+        'bg.teach.body': 'I teach developmental and educational psychology at the University of New York in Prague. At the Faculty of Arts of Charles University I taught developmental neuropsychology. My teaching focuses on human development, typical and atypical neurodevelopment, developmental psychopathology and connecting research with practice.',
+        'bg.focus.title': 'Areas of expertise',
+        'bg.focus.items': [
+          'developmental psychology', 'cognitive psychology', 'developmental neuropsychology',
+          'neurodevelopmental difficulties', 'childhood trauma and stress', 'executive functions',
+          'attention and learning', 'psychological counselling for parents',
+          'mental health of children and families', 'applying research findings in practice'
+        ],
+
+        'media.title': 'Media and public appearances',
+        'media.m1.meta':  '29 May 2026 — Hospodářské noviny, Generační konflikt podcast',
+        'media.m1.body':  'A podcast interview on the impact of digital technologies, social media and fast online content on attention, cognitive functioning and mental health. (In Czech)',
+        'media.m2.meta':  '19 May 2026 — Hospodářské noviny',
+        'media.m2.body':  'Expert commentary on attention and cognitive difficulties in young people and possible links to digital technologies. (In Czech)',
+        'media.m3.meta':  '27 February 2026 — Hospodářské noviny',
+        'media.m3.body':  'An article on attention, mental fatigue and ways to limit the negative effects of mobile phones and fast digital content. (In Czech)',
+        'media.m4.meta':  '30 July 2025 — Pod vlivem podcast',
+        'media.m4.body':  'An interview on sharenting, children\u2019s privacy, digital footprints, a child\u2019s consent and parental responsibility when sharing their child\u2019s life online. (In Czech)',
+        'media.m5.meta':  '23 July 2025 — Pod vlivem podcast',
+        'media.m5.body':  'An interview on the effects of short-form digital content on attention, sleep, communication and the everyday functioning of children and adolescents. (In Czech)',
+        'media.m6.meta':  '21 June 2025 — Heroine',
+        'media.m6.body':  'An interview on aggression, violence and bullying among children, emotion regulation and the influence of the family and social environment. (In Czech)',
+        'media.m7.meta':  '19 June 2025 — Deník.cz',
+        'media.m7.body':  'An interview on parents\u2019 reactions to school results, appropriate expectations, ongoing communication and the limited value of punishment at the end of the school year. (In Czech)',
+        'media.m8.meta':  '20 March 2025 — iROZHLAS.cz',
+        'media.m8.body':  'An interview on dopamine, motivation and the fast, unpredictable rewards associated with social media use. (In Czech)',
+        'media.m9.meta':  '13 March 2025 — Hospodářské noviny',
+        'media.m9.body':  'Expert commentary on grieving the death of a pet, disenfranchised grief, feelings of guilt and ways of saying goodbye. (In Czech)',
+        'media.m10.meta': '23 February 2025 — TV Nova, Střepiny',
+        'media.m10.body': 'A television appearance on risky use of digital technologies among adolescents and its impact on mental health and everyday functioning. (In Czech)',
+        'media.m11.meta': '22 February 2025 — Metro.cz / ČTK',
+        'media.m11.body': 'Expert commentary on the long-term effects of pandemic isolation on young people\u2019s social skills, communication and relationships. (In Czech)',
+        'media.m12.meta': '31 December 2024 — Czech Radio Plus, Pro a proti',
+        'media.m12.body': 'A radio debate on the \u201cbrain rot\u201d phenomenon, fast content on social media and its possible influence on attention and cognitive functioning. (In Czech)',
+        'media.m13.meta': '8 December 2024 — iDNES.cz',
+        'media.m13.body': 'Expert commentary on children\u2019s fights inspired by online fighting formats, imitation of violence and the influence of social media. (In Czech)',
+        'media.m14.meta': '27 October 2024 — TV Nova, Střepiny',
+        'media.m14.body': 'A television appearance focused on Generation Z, their mental health, values and experiences in today\u2019s social and digital environment. (In Czech)',
+        'media.m15.meta': '23 October 2024 — Respekt',
+        'media.m15.body': 'Expert commentary on the preference for text-based communication, the attentional demands of phone calls and the stress of having to respond immediately. (In Czech)',
+        'media.m16.meta': '9 October 2024 — Novinky.cz and Právo',
+        'media.m16.body': 'An interview on the availability of child psychological and psychiatric care in the Czech Republic and the United Kingdom, and on the training of healthcare psychologists. (In Czech)',
+        'media.m17.meta': '9 September 2024 — Czech Radio Radiožurnál, Antivirus',
+        'media.m17.body': 'Expert commentary on mobile phone use in schools, attention, adolescent self-control, cyberbullying and the limits of blanket bans. (In Czech)',
+        'media.m18.meta': '25 June 2024 — The Epoch Times ČR',
+        'media.m18.body': 'Expert commentary on adolescents\u2019 mental health difficulties, family communication and situations in which professional help should be sought. (In Czech)',
+
+        'pricing.title': 'Pricing',
+        'pricing.g1.title': 'Consultations for parents',
+        'pricing.g1.r1.name': 'One-off parenting consultation',
+        'pricing.g1.r1.desc': 'A practical consultation focused on a specific question, a parenting approach, your child\u2019s development or a difficult situation at home.',
+        'pricing.g1.r1.dur': '60 minutes',
+        'pricing.g1.r2.name': 'Extended parenting consultation',
+        'pricing.g1.r2.desc': 'Suitable for more complex situations, multiple topics or a joint consultation with both parents.',
+        'pricing.g1.r2.dur': '90 minutes',
+        'pricing.g1.r3.name': 'Follow-up parenting consultation',
+        'pricing.g1.r3.desc': 'Reviewing the steps introduced and adjusting the next course of action.',
+        'pricing.g1.r3.dur': '50 minutes',
+        'pricing.g2.title': 'Sessions with the child and family',
+        'pricing.g2.r1.name': 'Individual session with the child',
+        'pricing.g2.r1.desc': 'Individual sessions are offered after a prior consultation with the parent.',
+        'pricing.g2.r1.dur': '50 minutes',
+        'pricing.g2.r2.name': 'Joint parent\u2013child session',
+        'pricing.g2.r2.dur': '75 minutes',
+        'pricing.g2.r3.name': 'Family consultation',
+        'pricing.g2.r3.dur': '90 minutes',
+        'pricing.g3.title': 'Professional report consultation',
+        'pricing.g3.r1.name': 'Professional report consultation',
+        'pricing.g3.r1.desc': 'Includes prior study of one document of standard length. The price may be adjusted for a larger number of documents or documentation of exceptional length.',
+        'pricing.g3.r1.dur': '75 minutes',
+        'pricing.g4.title': 'Short-term programmes',
+        'pricing.g4.r1.name': 'Parenting action plan',
+        'pricing.g4.r1.desc': 'Suitable for parents who want to work systematically on a specific area of family life at home. Includes an initial parenting consultation, a follow-up consultation, a closing consultation, a written action plan and one minor revision of the plan.',
+        'pricing.g4.r1.dur': '3 consultations and a written plan',
+        'pricing.g4.r2.name': 'Individual child support plan',
+        'pricing.g4.r2.desc': 'Suitable for families dealing with neurodevelopmental difficulties, a major life change or a more complex problem in everyday functioning. Includes an initial consultation with the parent or parents, a session with the child, a joint or focused session, a closing consultation, a written individual plan and one follow-up revision of the plan.',
+        'pricing.g4.r2.dur': '4 sessions and a written plan',
+        'pricing.g4.r3.name': 'Extended family support',
+        'pricing.g4.r3.desc': 'This programme is offered after an initial consultation, according to the family\u2019s needs.',
+        'pricing.g4.r3.dur': '6 sessions, a written plan and a follow-up review',
+        'pricing.g5.title': 'Other services',
+        'pricing.g5.r1.name': 'Brief professional consultation for existing clients',
+        'pricing.g5.r1.dur': '25 minutes',
+        'pricing.g5.r2.name': 'Consultation with the school or a cooperating professional',
+        'pricing.g5.r2.desc': 'This service is provided with the consent of the legal guardian.',
+        'pricing.g5.r2.dur': '50 minutes',
+        'pricing.g5.r3.name': 'Standalone written recommendation following a prior consultation',
+        'pricing.g5.r3.price': 'From 2,500 CZK depending on scope',
+        'pricing.intro.title': 'Initial contact',
+        'pricing.intro.body': 'A brief organisational phone call of 10 to 15 minutes is free of charge. It serves as a basic check of whether the offered type of service is suitable for your situation. It is not a psychological consultation. Online and in-person consultations are priced the same.',
+        'pricing.storno.title': 'Cancellation policy',
+        'pricing.storno.body': 'A booked appointment can be cancelled or rescheduled free of charge no later than 24 hours before it starts. For later cancellations or no-shows, the full price of the consultation may be charged.',
+
+        'faq.title': 'Frequently asked questions',
+        'faq.q1.q': 'Does my child have to attend the consultation?',
+        'faq.q1.a': 'No. The first consultation often takes place with the parent or parents only. Depending on the situation, we will then agree whether involving the child is appropriate.',
+        'faq.q2.q': 'Can I come for just one consultation?',
+        'faq.q2.a': 'Yes. Some parenting questions can be discussed well within a single session. At the end of the consultation we will agree whether further cooperation is needed.',
+        'faq.q3.q': 'Do you diagnose ADHD or autism?',
+        'faq.q3.a': 'I do not establish new diagnoses within this counselling service. I can, however, help explain results and recommendations you already have and translate them into practical strategies.',
+        'faq.q4.q': 'My child already has a diagnosis. Can we come even if we are not looking for therapy?',
+        'faq.q4.a': 'Yes. A significant part of this service is precisely helping parents who have a diagnosis or a professional report but need to know what it practically means for functioning at home or at school.',
+        'faq.q5.q': 'Is this service psychotherapy?',
+        'faq.q5.a': 'No. I offer short-term psychological counselling focused on specific goals, practical strategies and support for the child and family. If long-term psychotherapy is appropriate, I will recommend a next step.',
+        'faq.q6.q': 'Do you also work with children individually?',
+        'faq.q6.a': 'Yes, but usually only after an initial consultation with the parent. Individual work with the child is short-term and remains connected to the overall cooperation with the family.',
+        'faq.q7.q': 'What if the parents are divorced?',
+        'faq.q7.a': 'Before starting work with the child, the care arrangement, parental responsibility and legal guardians\u2019 consents need to be clarified. The counselling is not intended for assessing parenting competence, gathering evidence against the other parent, or preparing materials for a court dispute.',
+        'faq.q8.q': 'Do you prepare reports for court?',
+        'faq.q8.a': 'No. I do not prepare expert opinions, parenting competence assessments or recommendations concerning child custody.',
+        'faq.q9.q': 'How long does the cooperation last?',
+        'faq.q9.a': 'Depending on the situation, it may be a single session or roughly three to six consultations.',
+        'faq.q10.q': 'Are consultations also available online?',
+        'faq.q10.a': 'Yes. Parenting consultations and report consultations can take place in person or online. The suitability of online sessions with a child is assessed individually.',
+        'faq.q11.q': 'Do you offer consultations in English?',
+        'faq.q11.a': 'Yes. Consultations can take place in Czech or English.',
+
+        'contact.title': 'Contact and booking',
+        'contact.intro': 'To book a consultation, you can contact me via the form or by email. In your message, please briefly state:',
+        'contact.items': [
+          'your child\u2019s age,',
+          'the main reason for the consultation,',
+          'whether you are interested in an in-person or online session,',
+          'and whether you have a professional report available.'
+        ],
+        'contact.emailLabel': 'Email:',
+        'contact.langs': 'Consultation languages: Czech and English',
+        'contact.address': 'You will receive the exact address for in-person sessions after your appointment is confirmed.',
+        'contact.formTitle': 'Write to me',
+        'contact.name': 'Full name',
+        'contact.email': 'Email',
+        'contact.phone': 'Phone',
+        'contact.childAge': 'Child\u2019s age',
+        'contact.service': 'What type of service are you interested in?',
+        'contact.serviceOpts.o1': 'parenting consultation',
+        'contact.serviceOpts.o2': 'extended parenting consultation',
+        'contact.serviceOpts.o3': 'professional report consultation',
+        'contact.serviceOpts.o4': 'support with ADHD or another neurodevelopmental difficulty',
+        'contact.serviceOpts.o5': 'support for the family through change',
+        'contact.serviceOpts.o6': 'other situation',
+        'contact.message': 'Briefly describe what brings you to me',
+        'contact.prefer': 'Do you prefer:',
+        'contact.preferOpts.o1': 'an in-person consultation',
+        'contact.preferOpts.o2': 'an online consultation',
+        'contact.preferOpts.o3': 'either option',
+        'contact.required': '(required)',
+        'contact.gdpr': 'I consent to the processing of my personal data for the purpose of responding to my enquiry.',
+        'contact.send': 'Send enquiry',
+
+        'footer.desc': 'Short-term psychological counselling for parents, children and families. Parenting strategies, neurodevelopmental difficulties, ADHD, major life changes and the practical use of psychological recommendations.',
+        'footer.copy': '\u00a9 2026 Nat\u00e1lie Bergmann. All rights reserved.'
+      }
+    };
+
+    /* Page title, meta description and form subject per language */
+    const metaDescEl  = document.querySelector('meta[name="description"]');
+    const subjectEl   = document.querySelector('input[name="_subject"]');
+    const pageMeta = {
+      cs: { title: document.title, desc: metaDescEl.content, subject: subjectEl.value },
+      en: {
+        title:   'Nat\u00e1lie Bergmann \u2014 Psychological counselling for parents, children and families',
+        desc:    'Short-term psychological counselling for parents, children and families. Parenting strategies, neurodevelopmental difficulties, ADHD, major life changes.',
+        subject: 'New enquiry from the website'
+      }
+    };
+
+    /* Harvest Czech content from the DOM so it only lives in the markup */
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      translations.cs[el.getAttribute('data-i18n')] = el.textContent;
+    });
+    document.querySelectorAll('[data-i18n-list]').forEach(el => {
+      translations.cs[el.getAttribute('data-i18n-list')] =
+        Array.from(el.querySelectorAll('li')).map(li => li.textContent);
+    });
+
+    let currentLang = 'cs';
+
+    function setLang(lang) {
+      currentLang = lang;
+      document.documentElement.lang = lang;
+      const t = translations[lang];
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (t[key] !== undefined) el.textContent = t[key];
+      });
+      document.querySelectorAll('[data-i18n-list]').forEach(el => {
+        const key = el.getAttribute('data-i18n-list');
+        if (Array.isArray(t[key])) {
+          el.innerHTML = '';
+          t[key].forEach(item => {
+            const li = document.createElement('li');
+            li.textContent = item;
+            el.appendChild(li);
+          });
+        }
+      });
+      ['btn-cs','btn-en','drawer-btn-cs','drawer-btn-en'].forEach(id => {
+        const el = document.getElementById(id);
+        if (!el) return;
+        el.classList.toggle('lang-active', id.endsWith(lang));
+        el.setAttribute('aria-pressed', id.endsWith(lang));
+      });
+      document.title      = pageMeta[lang].title;
+      metaDescEl.content  = pageMeta[lang].desc;
+      subjectEl.value     = pageMeta[lang].subject;
+      try { localStorage.setItem('lang', lang); } catch (e) {}
+    }
+
+    /* Restore a previously chosen language */
+    try {
+      if (localStorage.getItem('lang') === 'en') setLang('en');
+    } catch (e) {}
+
+    /* ── HAMBURGER ── */
+    const hamburger = document.getElementById('hamburger');
+    const drawer    = document.getElementById('nav-drawer');
+
+    function setDrawer(isOpen) {
+      hamburger.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', isOpen);
+      drawer.classList.toggle('open', isOpen);
+      drawer.setAttribute('aria-hidden', !isOpen);
+      drawer.inert = !isOpen;
+    }
+
+    hamburger.addEventListener('click', () => {
+      setDrawer(!drawer.classList.contains('open'));
+    });
+
+    drawer.querySelectorAll('.drawer-link').forEach(link => {
+      link.addEventListener('click', () => setDrawer(false));
+    });
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && drawer.classList.contains('open')) {
+        setDrawer(false);
+        hamburger.focus();
+      }
+    });
+
+    /* ── ACTIVE NAV ON SCROLL ── */
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === '#' + entry.target.id) {
+              link.classList.add('active');
+            }
+          });
+        }
+      });
+    }, { threshold: 0.25 });
+
+    sections.forEach(s => observer.observe(s));
+  </script>
+
+</body>
+</html>
