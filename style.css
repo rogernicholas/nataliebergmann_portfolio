@@ -957,6 +957,19 @@ textarea {
 .form-consent input[type="checkbox"] { margin-top: 0.2rem; }
 
 .btn-submit { padding-inline: 2.2rem; }
+.btn-submit:disabled { opacity: 0.7; cursor: wait; transform: none; }
+
+/* Message shown after sending the form */
+.form-status {
+  margin-top: 1.4rem;
+  padding: 0.9rem 1.1rem;
+  border-radius: 10px;
+  border-left: 4px solid var(--ink);
+  background: var(--surface);
+  color: var(--ink);
+  font-size: var(--fs-small);
+}
+.form-status-error { border-left-color: var(--accent-dark); }
 
 /* ============================================================
    FOOTER
