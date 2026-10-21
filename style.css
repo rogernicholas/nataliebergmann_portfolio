@@ -1054,6 +1054,21 @@ footer p:last-child { margin-bottom: 0; }
   details .acc-body { padding: 0.2rem 1.2rem 1.2rem; }
 }
 
+/* Sections fade in as they scroll into view. Hidden only when JS runs
+   (html.js) and the visitor has not asked for reduced motion. */
+@media (prefers-reduced-motion: no-preference) {
+  .js main > section {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+
+  .js main > section.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 /* Spam honeypot: hidden from people, visible to bots */
 .hp-field {
   position: absolute !important;
